@@ -22,7 +22,7 @@ print(list(list2))
 
 #Unpack lists
 fruits = ['apple', 'orange', 'banana']
-friut1, friut2, friut3 = fruits;
+friut1, friut2, friut3 = fruits; #* this is called desctructing in js
 print(friut1, friut2, friut3)
 
 #TODO Multiple Assignment 
@@ -43,15 +43,20 @@ print(con)
 #Todo Generator Expressions
 gen= (i for i in 'cbf')
 print(gen)
+
 #Todo Casting: 
 print(bool(3))
 
 #todo Import Random
 import random;
-print(random.randrange(1, 5))
+print(random.randrange(1, 5)) #for random numbers
 
 #Todo booleans
 print(bool(0))  #False
 print(bool({}))   #False
 print(bool('salam23'))  #True
 print(7>2)  #True
+
+print('leman'*2); # output: lemanleman
+print('leman' + 5) #! throw an error!!!!!!!!!!
+
