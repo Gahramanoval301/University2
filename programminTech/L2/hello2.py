@@ -1,4 +1,4 @@
-# ? print('Hello', 'world', sep=',', end='.')
+print('Hello', 'world', sep=',', end='.')
 # ? a = 0
 # ? b = 3
 # ? print(a or b)
