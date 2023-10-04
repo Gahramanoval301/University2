@@ -1,8 +1,37 @@
-main {
-    width: 80%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header .header nav {
+    padding: 20px;
+
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header nav li {
+    display: inline-block;
+}
+
+
+main .main {
+    width: 50%;
     margin: 0 auto;
-    border-left: 2px solid;
-    border-right: 2px solid;
-    padding: 10px;
-    box-shadow: 0 0 10px black;
+}
+
+main .main img {
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+}
+
+main .main h1 {
+    text-align: center;
 }
