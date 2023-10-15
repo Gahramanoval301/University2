@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some tags</title>
+</head>
+
+<body>
+    <!-- head:This element indicates the document head, which contains descriptive
+     information about the HTML document as well as other supplementary
+      information, such as style rules or scripts. -->
+    
+    <form action="dosomething.php"
+    method="post" name="testform" onsubmit="return validate();">
+   <div>
+    <label><strong>Username:</strong>
+    <input type="text" name="username">
+    </label>
+    <br>
+    <label><strong>Comments:</strong>
+    <textarea name="comments" cols="30" rows="8"></textarea>
+    </label>
+    <br>
+    <input type="submit" value="send">
+    <input type="reset" value="clear">
+   </div>
+   </form>
+   
+    <fieldset>
+        <legend>Customer Identification</legend>
+        <br>
+        <label>Customer Name:
+        <input type="text" id="CustName" size="25">
+        </label>
+        </fieldset>
+        
+    <em>Empasizes text</em>
+    <p>Inside p tag: <dfn>dfn tag(Definition)</dfn></p>  
+    <base>
+    <a href="#" target="_blank">Link for you</a>
+    <p><abbr title="Author">Leman</abbr></p>
+    <!-- <acronym title="">My name</acronym> -->
+    <address>Address tag</address>
+    <map name="primary">
+        <area shape="circle" coords="200,250,25" href="another.html" alt="map">
+    </map>
+    <article id="myFirstArticle">
+        <header>
+            <h1>Article Head</h1>
+            <p>using of article tag</p>
+        </header>
+        <p>my articles: Lorem ipsum dolor sit amet.</p>
+    </article>
+    <!-- area:This element defines a hotspot region on an image and
+         associates it with a hypertext link. 
+         This element is used only within a <map> tag. -->
+    <aside>Aside tag used for sidebar used for advertisements and etc</aside>
+    <audio src="../../../../Downloads/mp3indirdur-Jeyhun-Samedov-Getme.mp3" controls></audio>
+    <b>bold text with bold(b) tag</b>
+    <base href="">
+    <!-- base: base url->found within the head element specifies the base URL stem
+             to be used  for all relative URLs contained within a document. -->
+
+    <!-- Switch text direction -->
+    <p>Some other text here <bdo dir="rtl">This text will go right to left in
+            a browser that supports this element</bdo> some more text here.</p>
+    <!-- bdo: This element is used to override the current directionality of text. -->
+    <big>big font was depricated with big tag</big>
+    <blockquote cite="http://www.loc.gov/rr/program/bib/ourdocs/DeclarInd.html">
+        We hold these truths to be self-evident, that all men are created equal,
+        that they are endowed by their Creator with certain unalienable rights,
+        that among these are life, liberty and the pursuit of happiness.
+    </blockquote>
+    <!-- blockquote : indicates that the enclosed text is an extended quotation -->
+    <!-- <br> (Line Break)  -->
+    <button name="Submit" value="Submit" type="Submit">Submit Request</button>
+    <table border="1">
+        <caption align="top">Our High-Priced Menu(caption tag)</caption>
+        <tr>
+            <td>Escargot</td>
+            <td>Filet Mignon</td>
+            <td>Big Mac</td>
+        </tr>
+    </table>
+    <!-- caption:This element is used within the table element to define a caption. -->
+    <center>salam(with center tag). USE MARGIN!</center>
+    <p>Inside p tag:<cite>This cite element indicates a citation from a book or other published source </cite>
+    </p>
+    <p>To increment a variable <var>count</var>, use
+        <code> count++ </code> or <code> count = count + 1 </code>.</p>
+        <table border="1" width="400">
+            <colgroup>
+             <col align="center" width="150" />
+             <col align="right" />
+            </colgroup>
+             <td>This column is aligned to the center.</td>
+             <td>This one is aligned to the right.</td>
+            </td>
+            <tr><td>!</td><td>?</td></tr>
+            <tr><td>!</td><td>?</td></tr>
+            </table>
+            <!-- col tag must be inside of colgroup tag-->
+            <menu>
+                <command label="Add" type="Command" icon="plus.png">
+                <command label="Edit" type="Command" default>
+                <command label="Delete" type="Command" disabled>
+                <hr>
+                <command label="Sort Ascending" type="radio" radiogroup="sort">
+                <command label="Sort Descending" type="radio" radiogroup="sort">
+               </menu>
+               <form action="#" method="get">
+                <p><label>Drinks: <input list="soda"></label></p>
+                <datalist id="soda">
+                <option>Coke</option>
+                <option>Pepsi</option>
+                <option>Dr. Pepper</option>
+               <option>Mr. Pibb</option>
+                <option>Mt. Dew</option>
+                <option>7-Up</option>
+                </datalist>
+               </form>
+               <!-- datalist: This HTML5 element contains option elements that
+                populate an input element with type="list". These listed items
+                 would be considered the quick choices for the field
+               which would be the functionality of a select menu. -->
+               <dl>
+                <dt>DOG</dt>
+                <dd>A domesticated animal that craves attention all the time</dd>
+                <dt>CAT</dt>
+                <dd>An animal that would just as soon ignore you until it
+                gets hungry</dd>
+               </dl>
+               <!-- HTML5 Example -->
+               <details>
+               <dt>Important Note</dt>
+               <dd>This tag seems to be reused too much under HTML5!<dd>
+               </details>
+               <figure>
+               <dt>Moose Baby!</dt>
+               <dd>
+               <img src="desmond.jpg" alt="Desmond Baby" height="320" width="150">
+               <p>A photo of Desmond circa 2010.</p>
+               </dd>
+               </figure>
+               <!-- dl: This element indicates the definition of a term within 
+               a list of defined terms (<dt>) enclosed by a definition list
+                 (<dl>). Under HTML5, the element is also found with details 
+                    and figure elements enclosing the content of the element -->
+               
+               <del>deleted text with del tag</del>
+               <details onclick="this.open='open';">
+                <dt>Help?</dt>
+                <dd>
+                <p>This could give you help with HTML5 but we need more implementations to
+               prove how things will work.</p>
+              
+<!--                 details: This HTML5 element represents additional information 
+               or interactive elements that can be shown on demand. -->
+               <!-- <dt> (Term in a Definition List or Caption in Figure or Details) 
+                This element identifies a definition list term in a list of 
+                terms and definitions. Under HTML5, the element is also used 
+                within <details> and <figure> tags to represent a
+                caption for content. -->
+                
+               
+               
+    </div>
+</body>
+
+</html>
