@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <colgroup>
+          <col style="background-color: red;">
+          <col span="2" style="background-color: springgreen;">
+        </colgroup>
+        <tr>
+          <td>John Lennon</td>
+          <td>Rhythm Guitar</td>
+          <td>1960–1969</td>
+        </tr>
+        <tr>
+          <td>Paul McCartney</td>
+          <td>Bass</td>
+          <td>1960–1970</td>
+        </tr>
+        <tr>
+          <td>George Harrison</td>
+          <td>Lead Guitar</td>
+          <td>1960–1970</td>
+        </tr>
+        <tr>
+          <td>Ringo Starr</td>
+          <td>Drums</td>
+          <td>1960–1970</td>
+        </tr>
+      </table>
+      <label>South American countries</label><br>
+      <input list="countries" placeholder="Type a country">
+      
+      <datalist id="countries">
+        <option value="Argentina">
+        <option value="Bolivia">
+        <option value="Brazil">
+        <option value="Chile">
+        <option value="Colombia">
+        <option value="Ecuador">
+        <option value="Guyana">
+        <option value="Paraguay">
+        <option value="Peru">
+        <option value="Suriname">
+        <option value="Uruguay">
+        <option value="Venezuela">
+      </datalist>
+      <form action="/signup" method="post">
+        <p>
+          <label>Title</label><br>
+          <label>
+            <input type="radio" name="title" value="mr">
+            Mr
+          </label>
+          <label>
+            <input type="radio" name="title" value="mrs">
+            Mrs
+          </label>
+          <label>
+            <input type="radio" name="title" value="miss">
+            Miss
+          </label>
+        </p>
+        <p>
+          <label>First name</label><br>
+          <input type="text" name="first_name">
+        </p>
+        <p>
+          <label>Last name</label><br>
+          <input type="text" name="last_name">
+        </p>
+        <p>
+          <label>Email</label><br>
+          <input type="email" name="email" required>
+        </p>
+        <p>
+          <label>Phone number</label><br>
+          <input type="tel" name="phone">
+        </p>
+        <p>
+          <label>Password</label><br>
+          <input type="password" name="password">
+        </p>
+        <p>
+          <label>Country</label><br>
+          <select>
+            <option>China</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>Indonesia</option>
+            <option>Brazil</option>
+          </select>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" value="terms">
+            I agree to the <a href="/terms">terms and conditions</a>
+          </label>
+        </p>
+        <p>
+          <button>Sign up</button>
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Instrument</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>Name</th>
+            <th>Instrument</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>John Lennon</td>
+            <td>Rhythm Guitar</td>
+          </tr>
+          <tr>
+            <td>Paul McCartney</td>
+            <td>Bass</td>
+          </tr>
+          <tr>
+            <td>George Harrison</td>
+            <td>Lead Guitar</td>
+          </tr>
+          <tr>
+            <td>Ringo Starr</td>
+            <td>Drums</td>
+          </tr>
+        </tbody>
+      </table>
+      
+<table>
+    <thead>
+      <tr>
+        <th colspan="4">World Cup winners</th>
+      </tr>
+      <tr>
+        <td colspan="2">Location</td>
+        <td colspan="2">Score</td>
+      </tr>
+      <tr>
+        <td>Continent</td>
+        <td>Country</td>
+        <td>First</td>
+        <td>Total</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3">South America</td>
+        <td>Uruguay</td>
+        <td>1930</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Brazil</td>
+        <td>1958</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Argentina</td>
+        <td>1978</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td rowspan="5">Europe</td>
+        <td>Italy</td>
+        <td>1934</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Germany</td>
+        <td>1954</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>England</td>
+        <td>1966</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>France</td>
+        <td>1998</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Spain</td>
+        <td>2010</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+    </body>
+</html>
