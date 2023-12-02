@@ -1,7 +1,9 @@
-z1 = complex("7")
-print(z1) #(7 + 0j)
-# z2 = complex("2", "3")
-# print(z2) #TypeError -> complex() can't take second arg if first is a string
-z3 = complex("7+17j")
-print(z3)
-z4 = complex('7 + 17j') #ValueError
+zencir_sayi = 7
+gunluk_halqa_sayi = 1
+otel_gunluk_odeme = 1
+def zencir_qirmaq(otel_gunluk_odeme, gunluk_halqa_sayi, zencir_sayi):
+    qirmaq_sayi = otel_gunluk_odeme // (gunluk_halqa_sayi * zencir_sayi)
+    qalib_otel_gunluk_odeme = otel_gunluk_odeme % (gunluk_halqa_sayi * zencir_sayi)
+    return qirmaq_sayi, qalib_otel_gunluk_odeme
+qirmaq_sayi, qalib_otel_gunluk_odeme = zencir_qirmaq(otel_gunluk_odeme, gunluk_halqa_sayi, zencir_sayi)
+print(f"{zencir_sayi} dənəlik zəncir {qirmaq_sayi} dəfə qırılar və qalıq {qalib_otel_gunluk_odeme} qalır.")
