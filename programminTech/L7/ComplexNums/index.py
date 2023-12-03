@@ -1,9 +1,19 @@
-zencir_sayi = 7
-gunluk_halqa_sayi = 1
-otel_gunluk_odeme = 1
-def zencir_qirmaq(otel_gunluk_odeme, gunluk_halqa_sayi, zencir_sayi):
-    qirmaq_sayi = otel_gunluk_odeme // (gunluk_halqa_sayi * zencir_sayi)
-    qalib_otel_gunluk_odeme = otel_gunluk_odeme % (gunluk_halqa_sayi * zencir_sayi)
-    return qirmaq_sayi, qalib_otel_gunluk_odeme
-qirmaq_sayi, qalib_otel_gunluk_odeme = zencir_qirmaq(otel_gunluk_odeme, gunluk_halqa_sayi, zencir_sayi)
-print(f"{zencir_sayi} dənəlik zəncir {qirmaq_sayi} dəfə qırılar və qalıq {qalib_otel_gunluk_odeme} qalır.")
+z1 = complex('7')
+print(z1)
+z2 = complex("7+17j")
+# print('z2' + str(z2))
+def DecimalToBinary(num):
+        if num >= 1:
+           print (num % 2, end="" )
+           DecimalToBinary(num // 2)
+DecimalToBinary(7)
+print(sep='')
+def decimalToBinary(n): 
+    return bin(n).replace("0b", "") 
+print(decimalToBinary(7))
+
+string = 'leman'
+print(string[2:]) #slice method for python strings
+print(type(oct(23)))
+print(type(hex(12)))
+print(float.hex(12.2))
