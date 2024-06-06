@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="paragraph"></p>
+    </body>
+
+    <script>
+    
+    // const paragraph = document.getElementById("paragraph");
+    const paragraph = document.getElementById("paragraph");
+
+    function concatenateStrings(str1, str2) {
+      // Concatenate the two strings
+      let result = str1 + str2;
+
+      // Display the result in the paragraph
+      paragraph.textContent = result;
+    }
+    concatenateStrings("Hello,"," world!");
+
+
+  </script>
+</html>
